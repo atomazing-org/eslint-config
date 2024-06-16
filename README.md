@@ -1,7 +1,7 @@
-# What is @atomazing/eslint-config?
-@atomazing/eslint-config is a carefully curated set of ESLint rules aimed at optimizing the development process. Some rules have been excluded or modified in this set that could negatively affect developer convenience. For example, using export default has been prohibited to maintain a uniform style across the project, reducing the load on the developer. Additionally, some rules were moved from errors (error) to warnings (warn), allowing for more flexible management of the coding process without the strict need to fix every minor detail.
+# What is @atomazing-org/eslint-config?
+@atomazing-org/eslint-config is a carefully curated set of ESLint rules aimed at optimizing the development process. Some rules have been excluded or modified in this set that could negatively affect developer convenience. For example, using export default has been prohibited to maintain a uniform style across the project, reducing the load on the developer. Additionally, some rules were moved from errors (error) to warnings (warn), allowing for more flexible management of the coding process without the strict need to fix every minor detail.
 
-# Connecting the dependency @atomazing/eslint-config
+# Connecting the dependency @atomazing-org/eslint-config
 To connect, you need to install eslint in the project, then create **.eslintrc.js** and **.eslintignore.js** files in the root of the project. Let's consider creating the files. **.eslintrc.js**:
 
     module.exports = {  
@@ -9,7 +9,7 @@ To connect, you need to install eslint in the project, then create **.eslintrc.j
         tsconfigRootDir: __dirname,
         project: './tsconfig.json',
     },  
-    extends: ['@atomazing/eslint-config'],
+    extends: ['@atomazing-org/eslint-config'],
     settings: {
         'правило-eslint': 'off'
     },
@@ -44,7 +44,7 @@ However, it's more convenient to move this command into the scripts section of p
     }
 
 
-# Base @atomazing/eslint-config
+# Base @atomazing-org/eslint-config
 Libraries and plugins for ESLint are designed to enhance code quality during React development and ensure compliance with accessibility standards. Here are the main plugins that are used:
 1. **plugin:react/recommended**: This plugin provides a set of recommended rules for React projects, including checking prop usage, component types, array keys, and other aspects related to React. It helps detect potential issues in the code, such as missing required props or incorrect hook usage.
 2. **plugin:react/jsx-runtime**: With React 17 and above, a new JSX transformation was introduced that does not require explicit import of React in components. However, this may cause ESLint errors indicating that React is out of scope. The plugin:react/jsx-runtime is added to the ESLint configuration to disable relevant rules and prevent these errors.
@@ -57,7 +57,7 @@ Libraries and plugins for ESLint are designed to enhance code quality during Rea
 9. **plugin:unicorn/recommended**: Unicorn is a set of ESLint rules created to simplify the rule selection process. It offers a set of "definitive" solutions to many style coding questions, helping to make the code more uniform and understandable.
 10. **prettier**: Prettier is a code formatting tool that can be integrated with ESLint through the eslint-config-prettier plugin. It automatically formats files according to certain rules, making the code more readable and consistent.
 
-# Benefits of using @atomazing/eslint-config:
+# Benefits of using @atomazing-org/eslint-config:
 The ESLint configuration is stored in an npm repository, making it accessible to all team members. This ensures that all project participants adhere to the same coding standards, promoting the unification of the development process and improving code quality. Moreover, with the extracted ESLint configuration, integrating linting into continuous integration (CI) and delivery (CD) processes becomes easy. This automates the code check against standards before deployment, reducing the risk of introducing errors into production. Storing the ESLint configuration in an npm repository simplifies collaborative work on the project. If there is no eslint on the project, it can be easily installed, and there is no need to create a new configuration from scratch for a new project.
 
 Main components of the configuration:
