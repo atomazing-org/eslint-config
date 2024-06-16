@@ -6,12 +6,12 @@
 	"author": "whoisYeshua + MarkSinD",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/MarkSinD/atomazing-eslint-config.git"
+		"url": "git+https://github.com/atomazing-org/eslint-config.git"
 	},
 	"bugs": {
-		"url": "https://github.com/MarkSinD/atomazing-eslint-config"
+		"url": "https://github.com/atomazing-org/eslint-config"
 	},
-	"homepage": "https://github.com/MarkSinD/atomazing-eslint-config",
+	"homepage": "https://github.com/atomazing-org/eslint-config",
 	"keywords": [
 		"eslint",
 		"atomazing"

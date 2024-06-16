@@ -1,4 +1,4 @@
-# What is @atomaxing/eslint-config?
+# What is @atomazing/eslint-config?
 @atomazing/eslint-config is a carefully curated set of ESLint rules aimed at optimizing the development process. Some rules have been excluded or modified in this set that could negatively affect developer convenience. For example, using export default has been prohibited to maintain a uniform style across the project, reducing the load on the developer. Additionally, some rules were moved from errors (error) to warnings (warn), allowing for more flexible management of the coding process without the strict need to fix every minor detail.
 
 # Connecting the dependency @atomazing/eslint-config
@@ -57,7 +57,7 @@ Libraries and plugins for ESLint are designed to enhance code quality during Rea
 9. **plugin:unicorn/recommended**: Unicorn is a set of ESLint rules created to simplify the rule selection process. It offers a set of "definitive" solutions to many style coding questions, helping to make the code more uniform and understandable.
 10. **prettier**: Prettier is a code formatting tool that can be integrated with ESLint through the eslint-config-prettier plugin. It automatically formats files according to certain rules, making the code more readable and consistent.
 
-# Benefits of using @atomaxing/eslint-config:
+# Benefits of using @atomazing/eslint-config:
 The ESLint configuration is stored in an npm repository, making it accessible to all team members. This ensures that all project participants adhere to the same coding standards, promoting the unification of the development process and improving code quality. Moreover, with the extracted ESLint configuration, integrating linting into continuous integration (CI) and delivery (CD) processes becomes easy. This automates the code check against standards before deployment, reducing the risk of introducing errors into production. Storing the ESLint configuration in an npm repository simplifies collaborative work on the project. If there is no eslint on the project, it can be easily installed, and there is no need to create a new configuration from scratch for a new project.
 
 Main components of the configuration:
