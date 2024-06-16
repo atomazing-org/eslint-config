@@ -29,7 +29,7 @@ You can run eslint on a project using the command:
 However, it's more convenient to move this command into the scripts section of package.json, for example, through the format command and call it via npm run format.
 
        {
-    	    "name": "@sphere-frontend/main",
+    	    "name": "my-app",
     	    "version": "1.0.0",
     	    "description": "",
     	    "scripts": {
